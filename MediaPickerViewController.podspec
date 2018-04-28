@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MediaPickerViewController'
-  s.version          = '3.0.0'
+  s.version          = '3.0.1'
   s.summary          = 'Picker controller that supports multiple photos and videos written in Swift.'
 
 # This description is used to generate tags and improve search results.
