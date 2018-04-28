@@ -8,7 +8,7 @@
 
 import UIKit
 import Photos
-import AssetsPickerViewController
+import MediaPickerViewController
 import TinyLog
 import PureLayout
 

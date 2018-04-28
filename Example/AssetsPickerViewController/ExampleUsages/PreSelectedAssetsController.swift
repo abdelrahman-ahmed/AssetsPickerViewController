@@ -6,7 +6,7 @@
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
-import AssetsPickerViewController
+import MediaPickerViewController
 
 class PreSelectedAssetsController: CommonExampleController {
     

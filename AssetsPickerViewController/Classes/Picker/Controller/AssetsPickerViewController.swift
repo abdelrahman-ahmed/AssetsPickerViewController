@@ -37,21 +37,21 @@ open class AssetsPickerViewController: UINavigationController {
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
         setupPhotoController(type: AssetsPhotoViewController.self)
+        commonInit()
     }
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        commonInit()
         setupPhotoController(type: AssetsPhotoViewController.self)
+        commonInit()
     }
     
     public init(pickerConfig: AssetsPickerConfig? = nil) {
         self.pickerConfig = pickerConfig
         super.init(nibName: nil, bundle: nil)
-        commonInit()
        setupPhotoController(type: AssetsPhotoViewController.self)
+        commonInit()
     }
     
     public func setupPhotoController<T:AssetsPhotoViewController>(type:T.Type) {
@@ -66,7 +66,7 @@ open class AssetsPickerViewController: UINavigationController {
         photoViewController =  T(pickerConfig: config)
     }
     
-    func commonInit() {
+    public func commonInit() {
         TinyLog.isShowInfoLog = isShowLog
         TinyLog.isShowErrorLog = isShowLog
         AssetsManager.shared.registerObserver()

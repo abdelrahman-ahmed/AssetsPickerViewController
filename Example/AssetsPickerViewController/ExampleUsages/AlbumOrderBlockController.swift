@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AssetsPickerViewController
+import MediaPickerViewController
 
 class AlbumOrderBlockController: CommonExampleController {
     

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AssetsPickerViewController
+import MediaPickerViewController
 import Photos
 
 class AlbumFilterOptionController: CommonExampleController {
