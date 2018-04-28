@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'AssetsPickerViewController_Example' do
-  pod 'AssetsPickerViewController', :path => '../'
+  pod 'MediaPickerViewController', :path => '../'
 end
 
 post_install do |installer|

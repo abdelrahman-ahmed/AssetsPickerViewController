@@ -33,28 +33,28 @@ open class AssetsPickerViewController: UINavigationController {
     open var isShowLog: Bool = false
     private var pickerConfig: AssetsPickerConfig!
     
-    open private(set)  var photoViewController: AssetsPhotoViewController!
+    open var photoViewController: AssetsPhotoViewController!
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
-        photoViewController = setupPhotoController()
+        setupPhotoController(type: AssetsPhotoViewController.self)
     }
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         commonInit()
-        photoViewController = setupPhotoController()
+        setupPhotoController(type: AssetsPhotoViewController.self)
     }
     
     public init(pickerConfig: AssetsPickerConfig? = nil) {
         self.pickerConfig = pickerConfig
         super.init(nibName: nil, bundle: nil)
         commonInit()
-        photoViewController = setupPhotoController()
+       setupPhotoController(type: AssetsPhotoViewController.self)
     }
     
-    public func setupPhotoController()->AssetsPhotoViewController {
+    public func setupPhotoController<T:AssetsPhotoViewController>(type:T.Type) {
         var config: AssetsPickerConfig!
         if let pickerConfig = self.pickerConfig {
             config = pickerConfig.prepare()
@@ -63,7 +63,7 @@ open class AssetsPickerViewController: UINavigationController {
         }
         self.pickerConfig = config
         AssetsManager.shared.pickerConfig = config
-        return AssetsPhotoViewController(pickerConfig: config)
+        photoViewController =  T(pickerConfig: config)
     }
     
     func commonInit() {

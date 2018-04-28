@@ -1,0 +1,6 @@
+framework module MediaPickerViewController {
+  umbrella header "MediaPickerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

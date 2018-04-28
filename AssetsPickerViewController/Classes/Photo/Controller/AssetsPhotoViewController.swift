@@ -98,7 +98,7 @@ open class AssetsPhotoViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    init(pickerConfig: AssetsPickerConfig) {
+    required public init(pickerConfig: AssetsPickerConfig) {
         self.init()
         self.pickerConfig = pickerConfig
     }
