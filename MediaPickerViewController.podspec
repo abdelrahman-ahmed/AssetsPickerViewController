@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint AssetsPickerViewController.podspec' to ensure this is a
+# Be sure to run `pod lib lint MediaPickerViewController.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AssetsPickerViewController'
+  s.name             = 'MediaPickerViewController'
   s.version          = '2.4.2'
   s.summary          = 'Picker controller that supports multiple photos and videos written in Swift.'
 
@@ -22,11 +22,11 @@ Select multiple photos and videos.
 Fully customizable UI.
                        DESC
 
-  s.homepage         = 'https://github.com/DragonCherry/AssetsPickerViewController'
+  s.homepage         = 'https://github.com/abdelrahman-ahmed/MediaPickerViewController'
   s.screenshots      = 'https://cloud.githubusercontent.com/assets/20486591/26525538/42b1d6dc-4395-11e7-9c16-b9abdb2e9247.PNG', 'https://cloud.githubusercontent.com/assets/20486591/26616648/1d385746-460b-11e7-9324-62ea634e2fcb.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DragonCherry' => 'dragoncherry@naver.com' }
-  s.source           = { :git => 'https://github.com/DragonCherry/AssetsPickerViewController.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/abdelrahman-ahmed/MediaPickerViewController.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.linkedin.com/in/jeongyong/'
 
   s.ios.deployment_target = '9.0'
